@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  strapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      INSTANCE_CONNECTION_NAME: ${INSTANCE_CONNECTION_NAME:-travelsupport-intranet.mysql.database.azure.com}
+      DATABASE_NAME: ${DATABASE_NAME:-intranetdb}
+      DATABASE_USERNAME: ${DATABASE_USERNAME:-traveladmin@travelsupport-intranet}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-tr@velsupport1234}
+      DATABASE_SSL: ${DATABASE_SSL:-false}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-5c8bb307-4780-4da2-8f64-b96baa2cf089}
+      # HOST: ${HOST:-localhost}
+      # PORT: ${PORT:-1337}
+    ports:
+      - 80:1337
+      # - '${PORT:-80}:${PORT:-1337}'
