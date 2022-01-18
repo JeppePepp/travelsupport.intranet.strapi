@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "partner_types",
+  "collectionName": "supplier_types",
   "info": {
-    "singularName": "partner-type",
-    "pluralName": "partner-types",
-    "displayName": "PartnerType",
-    "description": ""
+    "singularName": "supplier-type",
+    "pluralName": "supplier-types",
+    "displayName": "SupplierType"
   },
   "options": {
     "draftAndPublish": false
@@ -17,11 +16,11 @@
       "required": true,
       "unique": true
     },
-    "partners": {
+    "suppliers": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::partner.partner",
-      "mappedBy": "partner_type"
+      "target": "api::supplier.supplier",
+      "mappedBy": "supplier_type"
     }
   }
 }

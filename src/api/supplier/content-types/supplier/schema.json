@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "partners",
+  "collectionName": "suppliers",
   "info": {
-    "singularName": "partner",
-    "pluralName": "partners",
-    "displayName": "Partner",
+    "singularName": "supplier",
+    "pluralName": "suppliers",
+    "displayName": "Supplier",
     "description": ""
   },
   "options": {
@@ -13,8 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "logo": {
       "type": "media",
@@ -32,6 +31,12 @@
     "postalAddress": {
       "type": "string"
     },
+    "postalCode": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
     "country": {
       "type": "string"
     },
@@ -41,25 +46,16 @@
     "phone2": {
       "type": "string"
     },
-    "fax": {
-      "type": "string"
-    },
-    "website": {
-      "type": "string"
-    },
     "email1": {
       "type": "email"
     },
     "email2": {
       "type": "email"
     },
+    "website": {
+      "type": "string"
+    },
     "organisationnumber": {
-      "type": "string"
-    },
-    "postalCode": {
-      "type": "string"
-    },
-    "prefix": {
       "type": "string"
     },
     "externalText": {
@@ -68,17 +64,11 @@
     "internalText": {
       "type": "richtext"
     },
-    "post": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::post.post",
-      "inversedBy": "partner"
-    },
-    "partner_type": {
+    "supplier_type": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::partner-type.partner-type",
-      "inversedBy": "partners"
+      "target": "api::supplier-type.supplier-type",
+      "inversedBy": "suppliers"
     }
   }
 }
