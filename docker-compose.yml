@@ -1,6 +1,7 @@
 version: '3.4'
 services:
-  strapi:
+  strapi-backend:
+    # image: travelsupportcc.azurecr.io/strapi:latest
     build:
       context: .
       dockerfile: Dockerfile

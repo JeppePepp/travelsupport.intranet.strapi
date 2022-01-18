@@ -1,8 +1,8 @@
 FROM node:12-alpine
 
-# ENV PORT 1337
-# ENV HOST 0.0.0.0
-ENV NODE_ENV production
+ENV PORT 1337
+ENV HOST 0.0.0.0
+ENV NODE_ENV development
 
 # Create app directory
 RUN mkdir -p /app
