@@ -29,9 +29,6 @@
     "streetAddress": {
       "type": "string"
     },
-    "postalAddress": {
-      "type": "string"
-    },
     "country": {
       "type": "string"
     },
@@ -68,17 +65,83 @@
     "internalText": {
       "type": "richtext"
     },
-    "post": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::post.post",
-      "inversedBy": "partner"
-    },
     "partner_type": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::partner-type.partner-type",
       "inversedBy": "partners"
+    },
+    "city": {
+      "type": "string"
+    },
+    "email3": {
+      "type": "email"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "partners"
+    },
+    "postgiro": {
+      "type": "string"
+    },
+    "bankgiro": {
+      "type": "string"
+    },
+    "vatNr": {
+      "type": "string"
+    },
+    "migration_partnerid": {
+      "type": "integer"
+    },
+    "numberOfEmployees": {
+      "type": "integer"
+    },
+    "bsp": {
+      "type": "string"
+    },
+    "srf": {
+      "type": "string"
+    },
+    "sjagentnr": {
+      "type": "string"
+    },
+    "amadeusID": {
+      "type": "string"
+    },
+    "clusternr": {
+      "type": "string"
+    },
+    "galileoID": {
+      "type": "string"
+    },
+    "licenser": {
+      "type": "string"
+    },
+    "netbooking": {
+      "type": "string"
+    },
+    "postalAddress": {
+      "type": "string"
+    },
+    "boxAddress": {
+      "type": "string"
+    },
+    "iataNr": {
+      "type": "string"
+    },
+    "isPrivate": {
+      "type": "boolean"
+    },
+    "isBusiness": {
+      "type": "boolean"
+    },
+    "midOffice": {
+      "type": "string"
+    },
+    "backOffice": {
+      "type": "string"
     }
   }
 }

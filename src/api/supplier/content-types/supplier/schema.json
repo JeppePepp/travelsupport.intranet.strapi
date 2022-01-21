@@ -69,6 +69,15 @@
       "relation": "manyToOne",
       "target": "api::supplier-type.supplier-type",
       "inversedBy": "suppliers"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "supplier"
+    },
+    "migration_supplierid": {
+      "type": "integer"
     }
   }
 }
