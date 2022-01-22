@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supplier_contacts",
+  "info": {
+    "singularName": "supplier-contact",
+    "pluralName": "supplier-contacts",
+    "displayName": "Supplier Contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "befattning": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "mobilePhone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "supplier": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::supplier.supplier",
+      "inversedBy": "supplier_contacts"
+    }
+  }
+}

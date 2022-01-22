@@ -78,6 +78,12 @@
     },
     "migration_supplierid": {
       "type": "integer"
+    },
+    "supplier_contacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::supplier-contact.supplier-contact",
+      "mappedBy": "supplier"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "supplier-type",
     "pluralName": "supplier-types",
-    "displayName": "SupplierType"
+    "displayName": "SupplierType",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -21,6 +22,9 @@
       "relation": "oneToMany",
       "target": "api::supplier.supplier",
       "mappedBy": "supplier_type"
+    },
+    "migration_id": {
+      "type": "integer"
     }
   }
 }
