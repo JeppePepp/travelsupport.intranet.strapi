@@ -30,8 +30,17 @@
       "target": "api::supplier.supplier",
       "inversedBy": "posts"
     },
-    "publishDate": {
+    "date": {
       "type": "date"
+    },
+    "fromDate": {
+      "type": "date"
+    },
+    "toDate": {
+      "type": "date"
+    },
+    "leveltext_migration_id": {
+      "type": "integer"
     }
   }
 }
