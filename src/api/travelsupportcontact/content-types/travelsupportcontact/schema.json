@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "travelsupportcontacts",
+  "info": {
+    "singularName": "travelsupportcontact",
+    "pluralName": "travelsupportcontacts",
+    "displayName": "Travel support contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phonemobile": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phonedirect": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}
