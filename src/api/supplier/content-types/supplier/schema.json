@@ -61,7 +61,7 @@
     "externalText": {
       "type": "richtext"
     },
-    "internalText": {
+    "agreementText": {
       "type": "richtext"
     },
     "supplier_type": {
