@@ -1,14 +1,6 @@
 // const path = require("path");
 
 module.exports = ({ env }) => {
-  console.log("HELLO WORLD");
-  console.log(
-    env(
-      "INSTANCE_CONNECTION_NAME",
-      "travelsupport-intranet.mysql.database.azure.com"
-    )
-  );
-  console.log("MY NODE ENV", env("NODE_ENV"));
   return {
     connection: {
       client: "mysql",
@@ -26,6 +18,7 @@ module.exports = ({ env }) => {
         //   rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
         // },
       },
+
       debug: false,
     },
     // connection: {
