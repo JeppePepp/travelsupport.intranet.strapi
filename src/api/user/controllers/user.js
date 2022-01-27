@@ -6,7 +6,7 @@ module.exports = {
 
     return await strapi.query("plugin::users-permissions.user").findOne({
       where: { id },
-      populate: ["role"],
+      populate: ["role", "partners"],
     });
   },
 };
