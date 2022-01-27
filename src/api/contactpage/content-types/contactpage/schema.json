@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "contact_pages",
+  "collectionName": "contactpages",
   "info": {
-    "singularName": "contact-page",
-    "pluralName": "contact-pages",
-    "displayName": "ContactPage",
-    "description": ""
+    "singularName": "contactpage",
+    "pluralName": "contactpages",
+    "displayName": "contactpage"
   },
   "options": {
     "draftAndPublish": true
