@@ -12,7 +12,10 @@ services:
       DATABASE_USERNAME: ${DATABASE_USERNAME:-traveladmin@travelsupport-intranet}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-tr@velsupport1234}
       DATABASE_SSL: ${DATABASE_SSL:-false}
-      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-5c8bb307-4780-4da2-8f64-b96baa2cf089}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      CLOUDINARY_NAME: ${CLOUDINARY_NAME:-dqy1t1n9o}
+      CLOUDINARY_KEY: ${CLOUDINARY_KEY:-325872555751884}
+      CLOUDINARY_SECRET: ${CLOUDINARY_SECRET:-s9Xs8_Ljx--_mhWc6lpdbek_Cxc}
       # HOST: ${HOST:-localhost}
       # PORT: ${PORT:-1337}
     ports:
