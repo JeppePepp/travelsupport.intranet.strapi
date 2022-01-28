@@ -84,6 +84,10 @@
       "relation": "oneToMany",
       "target": "api::supplier-contact.supplier-contact",
       "mappedBy": "supplier"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
