@@ -1,5 +1,6 @@
 module.exports = [
   "strapi::errors",
+  // "strapi::compression",
   "strapi::security",
   "strapi::cors",
   "strapi::poweredBy",
@@ -22,4 +23,20 @@ module.exports = [
       },
     },
   },
+  {
+    name: "strapi::compression",
+    config: {
+      gzip: {
+        enabled: true,
+        options: {
+          br: false,
+        },
+      },
+    },
+  },
 ];
+// module.exports = {
+//   settings: {
+//     gzip: { enabled: true, options: { br: false } },
+//   },
+// };
