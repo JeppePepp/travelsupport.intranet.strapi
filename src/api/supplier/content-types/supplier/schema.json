@@ -88,6 +88,15 @@
     "active": {
       "type": "boolean",
       "default": true
+    },
+    "helpepost": {
+      "type": "string"
+    },
+    "agentlogin": {
+      "type": "string"
+    },
+    "agentweb": {
+      "type": "string"
     }
   }
 }
