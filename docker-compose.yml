@@ -1,7 +1,7 @@
 version: '3'
 services:
   strapi-backend:
-    image: travelsupportcc.azurecr.io/strapi:latest
+    image: strapi:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,7 +12,7 @@ services:
       DATABASE_USERNAME: ${DATABASE_USERNAME:-traveladmin@travelsupportdbrestore}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-tr@velsupport1234}
       DATABASE_SSL: ${DATABASE_SSL:-false}
-      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}:-hejhej
       CLOUDINARY_NAME: ${CLOUDINARY_NAME:-dqy1t1n9o}
       CLOUDINARY_KEY: ${CLOUDINARY_KEY:-325872555751884}
       CLOUDINARY_SECRET: ${CLOUDINARY_SECRET:-s9Xs8_Ljx--_mhWc6lpdbek_Cxc}
