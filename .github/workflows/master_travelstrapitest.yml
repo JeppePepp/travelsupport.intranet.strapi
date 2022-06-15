@@ -45,7 +45,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'travelstrapitest'
+        app-name: 'travelsupportstrapi'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_04a99e655294499cadded5c85cdd375f }}
         images: 'travelsupportcc.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b6b624141c494f43a0a43f36442151de }}/strapi:${{ github.sha }}'
