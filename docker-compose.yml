@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3'
 services:
   strapi-backend:
     image: travelsupportcc.azurecr.io/strapi:latest
