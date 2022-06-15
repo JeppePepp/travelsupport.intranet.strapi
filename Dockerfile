@@ -1,8 +1,8 @@
-FROM node:16-alpine
+FROM node:14.19.3-alpine
 
 ENV PORT 1337
 ENV HOST 0.0.0.0
-ENV NODE_VERSION=16.15.1
+ENV NODE_VERSION=14.19.3
 # ENV NODE_ENV production
 
 # Create app directory
