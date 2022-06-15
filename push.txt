@@ -11,3 +11,5 @@ docker push travelsupportcc.azurecr.io/strapi
 
 Also comment out from docker compose
 image: travelsupportcc.azurecr.io/strapi:latest
+
+aa
