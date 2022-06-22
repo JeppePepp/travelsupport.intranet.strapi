@@ -7,7 +7,7 @@ docker login travelsupportcc.azurecr.io -u travelsupportcc -p 5hqEsDuvnhO/xfLZCD
 
 docker build -t strapi .
 
-## docker build -t travelsupportcc.azurecr.io/strapi
+## docker build -t travelsupportcc.azurecr.io/strapi .
 
 docker tag strapi travelsupportcc.azurecr.io/strapi
 
