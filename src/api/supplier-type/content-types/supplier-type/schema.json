@@ -4,7 +4,7 @@
   "info": {
     "singularName": "supplier-type",
     "pluralName": "supplier-types",
-    "displayName": "SupplierType",
+    "displayName": "Leverantörstyper",
     "description": ""
   },
   "options": {

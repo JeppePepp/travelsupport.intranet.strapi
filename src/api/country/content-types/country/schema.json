@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "singularName": "country",
+    "pluralName": "countries",
+    "displayName": "Country"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "migration_id": {
+      "type": "integer"
+    },
+    "agents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agent.agent",
+      "mappedBy": "country"
+    }
+  }
+}
